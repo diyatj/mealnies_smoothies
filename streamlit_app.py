@@ -92,7 +92,7 @@ st.dataframe(pd_df)
 ingredients_list = st.multiselect(
     'Choose up to 5 ingredients:',
     pd_df['FRUIT_NAME'].tolist(),  # <- use list from Pandas, not Snowpark df
-    max_selections=5
+    max_selections = 6
 )
 
 if ingredients_list:
